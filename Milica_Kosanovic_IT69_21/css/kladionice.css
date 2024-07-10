@@ -1,0 +1,2257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.header{
+    background-color: #18243c;
+    display: flex;
+     /* flex-direction: row; - > ovo je podrazumevana vrednost, kada stavimo displax flex */
+    justify-content: space-between;
+    padding: 0px 3%;
+    align-items: center;
+} 
+
+.logo{
+    padding: 10px;
+    margin: 10px;
+    width: 15%;
+    height: 75px;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_meni ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+}
+
+.nav_meni ul li a{
+    text-decoration: none;
+    padding: 1em; 
+    display: block; /* zauzima više prostora nego što mu je potrebno*/
+    font-weight: 950px;
+    font-size: 17px;
+    color: white;
+}
+
+.nav_meni ul li a:hover{
+    background-color: #202c4c;
+    color: #ffbf00;
+}
+
+.dodaci ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#podmeni{
+    height: auto;
+}
+#podmeni li{
+    display: none;
+}
+
+#podmeni_dropdown:hover li{
+    display: block;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid white;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+    margin-left: 15px;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #ffbf00;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #ffbf00;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.main_header_img{
+    width: 100%;
+    height: 62vh;
+    background-image: url(../images/kladionicepocetnastrslika.webp);
+    background-size: cover;
+}
+.text_header{
+    width: 40%;
+    padding-top: 5%;
+    padding-left: 3%;
+    color: white;
+}
+.text_header h1{
+    font-size: 48px;
+    padding-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+.text_header h2{
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+
+.bottom_header{
+    background-color: #e5e5e5;
+    height: 7vh;
+    display: flex;
+}
+
+.linkovi_header{
+    display: inline-block;
+    height: 7vh;
+    padding-left: 3%;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #18243c;
+}
+.linkovi_header a{
+    text-decoration: none;
+    color: #18243c;
+}
+.kladionice_baner{
+    display: flex;
+    height: 320vh;
+    background-color: #fff;
+}
+.naslov_i_paragraf_levo{
+    margin-top: 30px;
+    margin-left: 22px;
+    color: #18243c;
+    width: 90%;
+}
+
+.naslov_i_paragraf_levo p{
+    padding-left: 20px;
+}
+.naslov_i_paragraf_levo h1{
+    margin-top: 30px;
+    margin-left: 22px;
+    padding-top: 40px;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+
+.lista_najboljih_kladionica{
+    margin-left: 25px;
+}
+
+.brend_kladionice{
+    width: 90%;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+
+.brend_kladionice{
+    margin: 1em;
+    /*padding: 50px;*/
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    background-color: #ffffff;
+}
+
+.logo_brend_kladionice{
+    width: 240px;
+    height: 110px;
+    padding-left: 10px;
+}
+
+.logo_brend_kladionice img{
+    align-items: center;
+    width: 75%;
+    padding-top: 20px;
+}
+
+.ocena_kladionice{
+    width: 160px;
+    height: 110px;
+    text-align: left;
+    padding-top: 30px;
+}
+.ocena_prvi{
+    font-size: 22px;
+    color: #ffbf00;
+}
+.ocena_drugi{
+    font-size: 15px;
+    color: #18243c;
+}
+.slash{
+    font-size: 18px;
+    color: #18243c;
+}
+
+.checked{
+    color: #ffbf00;
+    padding: 0.3px;
+}
+.dugmici_kladionice{
+    flex-direction: column;
+}
+
+.dugmici_kladionice a{
+    text-decoration: none;
+}
+.recenzija_kladionice{
+    text-decoration: none;
+    margin: 17px;
+    margin-left: 30px;
+    padding-right: 10px;
+    padding-left: 18px;
+    border-radius: 10px;
+    text-align: center;
+    height: 38px;
+    width: 135px; 
+    border: 1px solid #18243c;
+    background-color: transparent;
+    color: #18243c;
+}
+
+.recenzija_kladionice:hover{
+    background-color: #18243c;
+    color: white;
+}
+.recenzija_kladionice p{
+    padding-top: 11px;
+    padding-right: 10px;
+}
+.kladi_se_kladionice{
+    text-decoration: none;
+    margin: 17px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 42px;
+    width: 160px;
+    background-color: #ffbf00;
+    color: white;
+}
+
+.kladi_se_kladionice:hover{
+    background-color: #18243c;
+}
+.kladi_se_kladionice p{
+    padding-top: 11px;
+    color: white;
+}
+
+.bonus_kladionice{
+    padding-top: 10px;
+    width: 300px;
+    height: 140px;
+}
+.bonus p{
+    text-align: left;
+}
+p.bonus1{
+    color: grey;
+    font-size: 15px;
+}
+p.bonus2{
+    color:#18243c;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.desna_strana_kladionice{
+    height: 89vh;
+    width: 50%;
+    margin-right: 40px;
+    margin-top: 70px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.header_mi_biramo_kladionice{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #18243c;
+}
+.header_mi_biramo_kladionice p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+}
+
+.main_mi_biramo_kladionice{
+    flex-direction: column;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+.main_mi_biramo_kladionice a{
+    text-decoration: none;
+}
+.gore_mi_biramo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slika_mi_biramo{
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+.slika_mi_biramo img{
+    width: 70px;
+    height: 36px;
+    
+}
+.kladi_se_kladionice_desno{
+    text-decoration: none;
+    margin: 17px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-left: 6px;
+    border-radius: 5px;
+    text-align: center;
+    height: 35px;
+    width: 100px;
+    background-color: #ffbf00;
+    color: white;
+}
+.kladi_se_kladionice_desno:hover{
+    background-color:  #18243c  
+}
+.kladi_se_kladionice_desno p{
+    color: white;
+}
+.dole_mi_biramo{
+    margin-top: 10px;
+}
+.dole_mi_biramo p{
+    color: #ccc;
+    font-size: 13px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.univerzalni_vodic_kroz_kladionice{
+    height: 85vh;
+    display: flex;
+    background-color: #f3f3f3;
+    width: 100%;
+}
+.levo_vodic{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 430px;
+    color: #18243c;
+    height: 75vh;
+}
+.levo_vodic h2{
+    padding-bottom: 20px;
+    letter-spacing: 0.3px;
+}
+.levo_vodic p{
+    padding-top: 20px;
+    width: 400px;
+    letter-spacing: 0.3px;
+    font-size: 16px;
+}
+
+.slika_vodic img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.desno_vodic{
+    margin-top: 40px;
+    width: 600px;
+    color: #18243c;
+    height: 75vh;
+}
+.desno_vodic h4{
+    padding-top: 46px;
+    color: #18243c;
+    padding-bottom: 10px;
+}
+
+.list_vodic ul li{
+    list-style-type: none;
+    padding-top: 10px;
+    color: #519fe9;
+}
+.list_vodic ul a{
+    text-decoration: none;
+}
+.list_vodic ul li:hover{
+    color: #18243c;
+}
+
+.najbolji_bonusi_u_srbiji{
+    width: 100%;
+    height: 80vh;
+    background-color: #e5e5e5;
+}
+.najbolji_bonusi_u_srbiji h1{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.main_najbolji_bonusi{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.main_najbolji_bonusi a{
+    text-decoration: none;
+    display: flex;
+}
+
+.tip_najbolji_bonusi{
+    width: 230px;
+    height: 310px;
+    border-radius: 10px;
+    transition: box-shadow.3s;
+    background-color: #ffffff;
+    margin-left: 17px;
+    border-radius: 10px;
+    
+}
+.gore_tip_najbolji_bonusi img{
+    width: 110px;
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.gore_tip_header_najbolji_bonusi{
+    background-color: #12203f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 59px;
+}
+.gore_tip_header_najbolji_bonusi p{
+    color: #519fe9;
+    font-size: 12px;
+    font-weight: lighter;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    letter-spacing: 0.5px;
+}
+.gore_tip_header_najbolji_bonusi h2{
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    
+}
+
+.dugme_kladi_se_najbolji_bonusi{
+    text-decoration: none;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 42px;
+    width: 140px;
+    background-color: #ffbf00;
+    color: #051024;
+    
+}
+
+.dugme_kladi_se_najbolji_bonusi:hover{
+    color: white;
+}
+.dugme_kladi_se_najbolji_bonusi p{
+    padding-top: 11px;
+    color: white;
+    padding-right: 30px;
+}
+.dole_tip_najbolji_bonusi{
+    width: 230px;
+    height: 120px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.dole_tip_paragraf_najbolji_bonusi{
+    width: 220px;
+    height: 100px;
+}
+
+.dole_tip_paragraf_najbolji_bonusi p{
+    color: #12203f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #12203f;
+    font-size:14px;
+    padding: 10px
+}
+
+
+.legalnosti_i_sigurnost_kladionica{
+    width: 100%;
+    height: 175vh;
+    margin-top: 40px;
+    padding-left: 40px;
+    color: #18243c;
+}
+.legalnosti_i_sigurnost_kladionica h1{
+    padding-bottom: 20px;
+}
+.legalnosti_i_sigurnost_kladionica p{
+    width: 850px;
+    padding-bottom: 20px;
+}
+.legalnosti_i_sigurnost_kladionica h2{
+    padding-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 870px;
+    border: solid #18243c thin;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  td {
+    border: solid #18243c thin;
+    width: 300px;
+  }
+ 
+  tr:nth-child(even){background-color: transparent}
+  
+  th {
+    background-color: #18243c;
+    color: #ffbf00;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 50px;
+  }
+.devet_ikonica{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.istrazi_kladionice{
+    width: 100%;
+    height: 65vh;
+    background-color: #e5e5e5;
+}
+.istrazi_kladionice h1{
+    margin-left: 30px;
+    padding-top: 30px;
+    color: #ffbf00;
+}
+.levo_devet_ikonica{
+    width: 300px;
+    height: 200px;
+}
+.levo_devet_ikonica ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 15px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+
+.levo_devet_ikonica ul li img{
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.levo_devet_ikonica ul a{
+    text-decoration: none;
+    color: #18243c;
+}
+
+.sredina_devet_ikonica{
+    width: 300px;
+    height: 200px;
+}
+.sredina_devet_ikonica ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 15px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+.sredina_devet_ikonica ul a{
+    text-decoration: none;
+    color: #18243c;
+}
+.sredina_devet_ikonica ul li img{
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 50px;
+}
+.desno_devet_ikonica{
+    width: 300px;
+    height: 200px;
+}
+.desno_devet_ikonica ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 15px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-left: 33px;
+    border-radius: 5px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+.desno_devet_ikonica ul a{
+    text-decoration: none;
+    color: #18243c;
+}
+.desno_devet_ikonica ul li img{
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.kako_rangiramo_kladionice{
+    width: 100%;
+    height: 1580vh;
+    margin-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+    padding-right: 300px;
+}
+.kako_rangiramo_kladionice h1{
+    width: 900px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+.kako_rangiramo_kladionice p{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.top_ranking{
+    display: flex;
+}
+.number_rank{
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    background: #4f9fe9;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.top_ranking h2{
+    font-size: 30px;
+    color: #12203f;
+    letter-spacing: 0.5px;
+}
+.sve_o_kladionicama_srbija {
+    color: #12203f;
+}
+.sve_o_kladionicama_srbija p{
+    padding-top: 20px;
+}
+
+.table1{
+    border-collapse: collapse;
+    width: 680px;
+} 
+.table1 th, td{
+    text-align: center;
+    padding: 8px;
+    border-radius: 0%;
+}
+
+.table1 td {
+    border: solid #18243c thin;
+    width: 300px;
+}
+ 
+.table1 tr:nth-child(even){background-color: transparent}
+  
+.table1 th{
+    background-color: #18243c;
+    color: #ffbf00;
+    height: 50px;
+}
+.licenca_kladionica h2{
+    padding-bottom: 10px;
+}
+
+.spisak_najboljih_kladionica{
+    height: 210vh;
+    color: #12203f;
+    width: 100%;
+    
+}
+.box_najboljih_kladionica{
+    display: flex;
+    margin-right: 350px;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: 25vh;
+    background-color: #d3dde4;
+    width: 930px;
+}
+
+.spisak_najboljih_kladionica a{
+    text-decoration: none;
+}
+
+.img_box img{
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.paragraf_box{
+    text-align: center;
+    color: #202c4c;
+    padding-top: 70px;
+    padding-right: 12px;
+    border-right: 1px solid #ccc;
+    letter-spacing: 0.3px;
+}
+
+.popust_box{
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.popust_box h3{
+    font-size: 16px;
+    color: #12203f;
+}
+
+
+.dugme_box{
+    text-decoration: none;
+    margin-top: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right:10px;
+    border-radius: 20px;
+    height: 42px;
+    width: 170px;
+    background-color: #ffbf00;
+    color: white;
+}
+.dugme_box p{
+    font-size: 14px;
+    padding-top: 11px;
+}
+.kako_rangiramo_kladionice ol{
+    padding-left: 50px;
+    
+}
+.naslov_najboljih_kl h3{
+    padding-top: 20px;
+}
+.spisak_najboljih_kladionica h2{
+    padding-top: 20px;
+}
+
+
+.najbolje_mobilne_aplikacije_za_kladjenje_div{
+    background-color: #e5e5e5;
+    height: 125vh;
+    color: #051024;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.najbolje_mobilne_aplikacije_za_kladjenje_div h1{
+    padding-bottom: 20px;
+}
+.najbolje_mobilne_aplikacije_za_kladjenje_div p{
+    width: 75%;
+}
+.top10_najboljih{
+    padding-top: 60px;
+}
+.top_ranking_mob{
+    display: flex;
+}
+.number_rank_mob{
+    color: #fff;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 700;
+    background: #4f9fe9;
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.top_ranking_mob h3{
+    font-size: 16px;
+    color: #12203f;
+    letter-spacing: 0.5px;
+}
+
+.najpopularnije_metode_uplate_isplate{
+    height: 100vh;
+    width: 100%;
+} 
+
+.bez_naslova_baner{
+    width: 100%;
+    height: 1020vh;
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+}
+.bez_naslova_baner p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner h3{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.bez_naslova_baner a{
+    text-decoration: none;
+}
+
+.faq_cesta_pitanja_najbolje_nove_kladionice{
+    height: 50vh;
+    color: #202c4c;
+    width: 100%;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice h1{
+    padding-left: 45px;
+    margin-top: 30px;
+}
+
+.pitanja_faq{
+    display: flex;
+    margin-left: 30px;
+    color: #202c4c;
+}
+
+.pitanja_levo_faq li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+.pitanja_desno_faq ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.footer{
+    height: 95vh;
+}
+
+.levo_gore_footer{
+    margin-left: 130px;
+    margin-top: 50px;
+}
+.levo_gore_footer a img{
+    width: 130px;
+    height: 130px;
+}
+.levo_gore_footer p{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.levo_gore_footer a{
+    color: #4f9fe9;
+    font-size: 14px;
+    text-decoration: none;
+}
+.levo_gore_footer a:hover{
+    color: #ffbf00;
+}
+
+.footer_gore{
+    display: flex;
+    height: 60vh;
+    background-color: #12203f;
+}
+.sredina_gore_footer{
+    display: flex;
+    padding-left: 120px;
+    margin-top: 50px;
+}
+
+.sredina_gore_footer ul{
+    list-style-type: none;
+}
+.sredina_gore_footer h4{
+    color: white;
+    padding-bottom: 20px;
+    letter-spacing: 0.3px;
+}
+.sredina_gore_footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.sredina_gore_footer ul li a:hover{
+    color: #ffbf00;
+}
+.levo_kladionice_tv ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-right: 80px;
+    margin-top: 15px;
+}
+.sredina_izbornik ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-right: 80px;
+    margin-top: 15px;
+}
+.desno_kladionice ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-right: 80px;
+    margin-top: 15px;
+}
+
+.desno_gore_footer h4{
+    color: white;
+    padding-bottom: 20px;
+    letter-spacing: 0.3px;
+    padding-left: 10px;
+}
+.desno_gore_footer{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.desno_gore_footer a{
+    text-decoration: none;
+}
+
+.facebook{
+    margin-bottom: 5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1f2d4b;
+}
+.twitter{
+    margin-bottom: 5px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1f2d4b;
+}
+.instagram{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #1f2d4b;
+}
+.footer_dole{
+    background-color: #051024;
+    height: 35vh;
+}
+
+.img_footer img{
+    width: 220px;
+    height: 30px;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.text_footer p{
+    color: #646b77;
+    font-size: 13px;
+    padding-left: 400px;
+    padding-top: 30px;
+    letter-spacing: 0.3px;
+}
+
+.footer_copyrights p{
+    color: #646b77;
+    font-size: 13px;
+    padding-left: 460px;
+    padding-top: 10px;
+    letter-spacing: 0.3px;
+}
+
+.kladionice_baner2{
+    display: flex;
+    height: 255vh;
+    background-color: #fff;
+}
+
+.bez_naslova_baner2{
+    width: 100%;
+    height: 830vh;
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+}
+.bez_naslova_baner2 p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner2 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner2 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner a{
+    text-decoration: none;
+}
+.bez_naslova_baner2 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner2 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner2 ul li{
+    width: 75%;
+    margin-left: 30px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice2{
+    height: 40vh;
+    color: #202c4c;
+    width: 100%;
+    margin-top: 20px;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice2 h1{
+    padding-left: 45px;
+    margin-top: 30px;
+}
+
+.pitanja_faq2{
+    display: flex;
+    margin-left: 30px;
+    color: #202c4c;
+}
+
+.pitanja_levo_faq2 li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+.pitanja_desno_faq2 ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.main_header_img2{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/esports-kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+.bez_naslova_baner3{
+    height: 450vh;
+    padding-left: 30px;
+    color: #12203f;
+    background-color: #ccc;
+    width: 100%;
+    padding-top: 30px
+}
+
+
+.bez_naslova_baner3 p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner3 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner3 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner3 a{
+    text-decoration: none;
+}
+.bez_naslova_baner3 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner3 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner3 ul li{
+    width: 75%;
+    margin-left: 30px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main_header_img3{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/Formula-1-kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+
+.kladionice_baner3{
+    display: flex;
+    height: 180vh;
+    background-color: #fff;
+}
+
+
+.main_header_img3{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/trkekonja-kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+
+.bez_naslova_baner4{
+    width: 100%;
+    height: 1070vh;
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+}
+
+.bez_naslova_baner4 p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner4 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner4 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner4 a{
+    text-decoration: none;
+}
+.bez_naslova_baner4 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner4 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner4 ul li{
+    width: 75%;
+    margin-left: 30px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main_header_img4{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/mobaplikacije.kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+
+.kladionice_baner4{
+    display: flex;
+    height: 230vh;
+    background-color: #fff;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice4{
+    height: 60vh;
+    color: #202c4c;
+    width: 100%;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice4 h1{
+    padding-left: 45px;
+    margin-top: 30px;
+}
+.main_header_img5{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/stranekladioniceuplata.kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+.kladionice_baner5{
+    display: flex;
+    height: 145vh;
+    background-color: #fff;
+}
+
+.table2 {
+    border-collapse: collapse;
+    width: 490px;
+    border: solid #18243c thin;
+  }
+  
+.table2 th, td {
+    text-align: center;
+    padding: 8px;
+  }
+.table2 td {
+    border: solid #18243c thin;
+    width: 300px;
+  }
+ 
+.table2 tr:nth-child(even){background-color: transparent}
+  
+.table2 th{
+    background-color: #18243c;
+    color: #ffbf00;
+    height: 40px;
+}
+
+.bez_naslova_baner5{
+    width: 100%;
+    height: 790vh;
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+}
+
+.bez_naslova_baner5 p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner5 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner5 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner_ispravka{
+    width: 100%;
+    height: 960vh;
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #12203f;
+}
+.bez_naslova_baner_ispravka p{
+    width: 75%;
+    padding-bottom: 10px;
+}
+.bez_naslova_baner_ispravka h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner_ispravka h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner_ispravka a{
+    text-decoration: none;
+    color: #4f9fe9;
+}
+
+.bez_naslova_baner_ispravka ul li{
+    width: 75%;
+    margin-left: 30px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bez_naslova_baner5 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner5 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner5 ul li{
+    width: 75%;
+    margin-left: 30px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bez_naslova_baner5 p img{
+    width: 600px;
+}
+
+.container_komentari_stare_kladionice{
+    height: 40vh;
+    width: 100%;
+    margin-top: 40px;
+}
+.komentari_stare_kladionice{
+    display: flex;
+}
+
+.autor_komentar_levo{
+    display: flex;
+    width: 70%;
+    margin-left: 40px;
+    background-color: #12203f;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.autor_slika img{
+    width: 100px;
+    margin-top: 10px;
+    height: 100px;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 15px;
+    border: 2px solid #ffbf00;
+    border-radius: 50%;
+}
+
+.autor_paragraf_levi{
+    width: 500px;
+}
+.autor_paragraf_levi p{
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.ikonice_drustvene_mreze{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.ikonice_drustvene_mreze a{
+    text-decoration: none;
+    color: white;
+}
+
+.autor_paragraf_desni {
+    color: white;
+    padding-top: 47px;
+    padding-left: 10px;
+}
+.autor_paragraf_desni a{
+    text-decoration: none;
+    color: #ffbf00;
+    font-size: 18px;
+}
+.autor_paragraf_desni p{
+    padding-top: 14px;
+    letter-spacing: 0.5px;
+}
+.rejtin_desno{
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    width: 18%;
+}
+.rejtin_desno p{
+    margin-top: 60px;
+    text-align: center;
+}
+.ocena_prvi{
+    font-size: 22px;
+    color: #ffbf00;
+}
+.ocena_drugi{
+    font-size: 15px;
+    color: #18243c;
+}
+.slash{
+    font-size: 18px;
+    color: #18243c;
+}
+
+.checked{
+    color: #ffbf00;
+}
+
+.faq_cesta_pitanja_najbolje_nove_kladionice5{
+    height: 40vh;
+    color: #202c4c;
+    width: 100%;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice5 h1{
+    padding-left: 45px;
+    margin-top: 30px;
+}
+
+.main_header_img6{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../images/stranekladioniceuplata.kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+
+.bez_naslova_baner6{
+    height: 485vh;
+    background-color: #e5e5e5;
+    color: #18243c;
+    padding-left: 40px;
+}
+
+.bez_naslova_baner6 p{
+    width: 75%;
+    padding-bottom: 10px;
+    
+}
+#prvi_paragraf{
+    padding-top: 60px;
+}
+.bez_naslova_baner6 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner6 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+
+.bez_naslova_baner6 a{
+    text-decoration: none;
+}
+.bez_naslova_baner6 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner6 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner6 ul li{
+    width: 70%;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+#lista_kladionica li a{
+    color: #4f9fe9;
+}
+#lista_kladionica li a:hover{
+    color: #18243c;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice6{
+    height: 30vh;
+    color: #202c4c;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main_header_img7{
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/uzivo-kladjenje-kladionice.tv_.jpg.webp);
+    background-size: cover;
+}
+
+.kladionice_baner7{
+    display: flex;
+    height: 310vh;
+    background-color: #fff;
+}
+
+.bez_naslova_baner7{
+    height: 280vh;
+    background-color: #e5e5e5;
+    color: #18243c;
+    padding-left: 40px;
+}
+.bez_naslova_baner7 p{
+    width: 75%;
+    padding-bottom: 10px;
+    
+}
+#prvi_paragraf{
+    padding-top: 60px;
+}
+.bez_naslova_baner7 h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.bez_naslova_baner7 h2{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+
+.bez_naslova_baner7 a{
+    text-decoration: none;
+}
+.bez_naslova_baner7 p a{
+    color: #4f9fe9;
+    text-decoration: none;
+}
+.bez_naslova_baner7 p a:hover{
+    color: #12203f;
+    
+}
+
+.bez_naslova_baner7 ul li{
+    width: 70%;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.ikonice_drustvene_mreze2{
+    padding-left: 60px;    
+}
+
+.ikonice_drustvene_mreze2 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------------------------------------------------------------------*/
+
+.kladionice_baner8{
+    height: 560vh;
+    width: 100%;
+    display: flex;
+}
+.naslov_i_paragraf_levo_gore{
+    width: 92%;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 60px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+
+.header_betwinner{
+    display: flex;
+    
+}
+.header_betwinner h1{
+    width: 78%;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.header_betwinner img{
+    width: 23%;
+    height: 95px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+.main_betwinner{
+    padding-left: 30px;
+}
+.footer_betwinner{
+    background-color: #051024;
+    height: 8vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 15px;
+}
+
+.footer_betwinner img{
+    width: 190px;
+    height: 20px;
+}
+
+.footer_betwinner a{
+    padding-left: 670px;
+}
+
+.dugmici_kladionice2 a{
+    text-decoration: none;
+}
+.kladi_se_kladionice2{
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 42px;
+    width: 160px;
+    background-color: #ffbf00;
+    color: white;
+}
+
+.kladi_se_kladionice2:hover{
+    background-color: #18243c;
+}
+.kladi_se_kladionice2 p{
+    padding-top: 11px;
+    color: white;
+}
+
+.container_prednosti_mane{
+    display: flex;
+    width: 96%;
+    margin-top: 25px;
+    padding-left: 40px;
+    color: #12203f;
+}
+.prednosti{
+    margin-right: 30px;
+    width: 50%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+.prednosti h2{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.container_prednosti_mane ul li{
+    list-style: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.minusi{
+    width: 50%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px rgb(0 0 0 / 10%);
+}
+.minusi h2{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.paragrafi_betwinner{
+    width: 96%;
+    padding-left: 40px;
+    padding-top: 30px;
+    text-align: justify;
+    color: #12203f;
+}
+.paragrafi_betwinner p{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.paragrafi_betwinner ul li{
+    margin-left: 50px;
+}
+.paragrafi_betwinner ol li{
+    margin-left: 50px;
+}
+.paragrafi_betwinner h1{
+    padding-top: 5px;
+}
+.paragrafi_betwinner p a{
+    text-decoration: none;
+    color: #4f9fe9;
+}
+.paragrafi_betwinner p a:hover{
+    color: #12203f;
+}
+.desna_strana_kladionice2{
+    height: 89vh;
+    width: 55%;
+    margin-right: 40px;
+    margin-top: 70px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+
+.gore_baner_betwinner{
+    background-color: #12203f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.baner_betwinner{
+    padding-bottom: 90px;
+    height: 70vh;
+}
+.gore_dugmici_betwinner{
+    display: flex;
+}
+.img_betwinner{
+    width: 120px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.img_betwinner img{
+    width: 100px;
+    border: solid white thin;
+    border-radius: 5px;
+}
+.dugmici_betwinner{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.dugmici_betwinner a{
+    text-decoration: none;
+}
+.kladi_se_betwinner{
+    margin-bottom: 10px;
+    width: 110px;
+    height: 45px;
+    border-radius: 10px;
+    color: #12203f;
+    background-color: #ffbf00;
+}
+.kladi_se_betwinner:hover{
+    color: white;
+}
+.kladi_se_betwinner p{
+    padding-top: 12px;
+    padding-left: 18px;
+}
+
+.rezencija_betwinner{
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+.rezencija_betwinner:hover{
+    color: white;
+}
+.rezencija_betwinner p{
+    padding-top: 6px;
+    padding-left: 16px;
+}
+.bonus_betwinner{
+    padding-left: 5px;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#bonus{
+    font-size: 12px;
+    color: #4f9fe9;
+}
+#euri{
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.dole_baner_betwinner p{
+    padding-top: 10px;
+    padding-left: 5px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    padding-bottom: 10px;
+}
+.box_najboljih_kladionica2{
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    background-color: #d3dde4;
+    width: 900px;
+}
+
+.table_betwinner{
+    border-collapse: collapse;
+    width: 900px;
+} 
+.table_betwinner th, td{
+    text-align: center;
+    padding: 8px;
+    border-radius: 0%;
+}
+
+.table_betwinner td {
+    border: solid #18243c thin;
+    width: 300px;
+}
+ 
+.table_betwinner tr:nth-child(even){background-color: transparent}
+  
+.table_betwinner th{
+    background-color: #18243c;
+    color: #ffbf00;
+    height: 50px;
+}
+
+.autor_komentar_levo_bet{
+    display: flex;
+    background-color: #12203f;
+    border-radius: 10px;
+    height: 220px;
+    margin-top: 30px;
+}
+
+.autor_slika_bet img{
+    width: 100px;
+    margin-top: 10px;
+    height: 100px;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 15px;
+    border: 2px solid #ffbf00;
+    border-radius: 50%;
+}
+
+.autor_paragraf_levi_bet{
+    width: 500px;
+}
+.autor_paragraf_levi_bet p{
+    padding-top: 20px;
+    padding-left: 40px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.ikonice_drustvene_mreze_bet{
+    display: flex;
+    padding-top: 10px;
+    margin-left: 10px;
+    justify-content: space-around
+}
+.ikonice_drustvene_mreze_bet a{
+    text-decoration: none;
+    color: white;
+}
+
+.autor_paragraf_desni_bet {
+    color: white;
+    padding-top: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.autor_paragraf_desni_bet a{
+    text-decoration: none;
+    color: #ffbf00;
+    font-size: 18px;
+}
+.autor_paragraf_desni_bet p{
+    padding-top: 14px;
+    letter-spacing: 0.5px;
+}
+.faq_cesta_pitanja_najbolje_nove_kladionice8{
+    height: 40vh;
+    background-color: #e5e5e5
+}
+
+.pitanja_faq8{
+    display: flex;
+    margin-left: 30px;
+    color: #202c4c;
+}
+
+.pitanja_levo_faq8 li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    background-color: white;
+}
+.pitanja_desno_faq8 ul li{
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 17px;
+    width: 525px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    letter-spacing: 0.5px;
+    display: block;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+/* ------------------------------------ EKSPERTI --------------------------------------------------*/
+
+.eksperti{
+    height: 230vh;
+    width: 93%;
+    margin-left: 40px;
+    color: #12203f;
+}
+.eksperti h1{
+    padding-top: 50px;
+}
+
+.autor_komentar_levo_eksperti{
+    display: flex;
+    background-color: #12203f;
+    border-radius: 10px;
+    height: 220px;
+    margin-top: 30px;
+   
+}
+.autor_komentar_levo_eksperti a{
+    text-decoration: none;
+    color: white;
+}
+
+.tipovi_eksperti{
+    width: 130px;
+    background-color: #ffbf00;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 130px;
+}
+.tipovi_eksperti p{
+    padding-top:8px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+.tipovi_eksperti:hover{
+    color: #051024;
+}
+
+.autor_slika_eksperti img{
+    width: 100px;
+    margin-top: 30px;
+    height: 100px;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 20px;
+    border: 2px solid #ffbf00;
+    border-radius: 50%;
+}
+
+.autor_paragraf_levi_eksperti{
+    width: 500px;
+}
+.autor_paragraf_levi_eksperti p{
+    padding-top: 20px;
+    padding-left: 40px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+.ikonice_drustvene_mreze_eksperti{
+    display: flex;
+    padding-top: 10px;
+    margin-left: 10px;
+    justify-content: space-around
+}
+.ikonice_drustvene_mreze_eksperti a{
+    text-decoration: none;
+    color: white;
+}
+
+.autor_paragraf_desni_eksperti {
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 900px;
+}
+.autor_paragraf_desni_eksperti a{
+    text-decoration: none;
+    color: #ffbf00;
+    font-size: 18px;
+}
+.autor_paragraf_desni_eksperti p{
+    letter-spacing: 0.5px;
+}
+
+#ognjen{
+    color: #ffbf00;
+    font-size: 20px;
+}
+#opis{
+    padding-top: 20px;
+}
+
+.text_eksperti{
+    height: 40vh;
+    background-color: #ccc;
+}
+.text_eksperti p{
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 95%;
+}
+#jedan{
+    padding-top: 60px;
+}
+
+/* ------------------------- SPORTSKE AKTUELNOSTI ----------------------------------------------*/
+
+
+.container_aktuelnosti{
+    height: 1010vh;
+    display: flex;
+}
+
+.levo_aktuelnosti{
+    width: 75%;
+}
+
+.sportske_aktuelnosti{
+    height: 180vh;
+    background-color: white;
+}
+.sportske_aktuelnosti h1{
+    color: #12203f;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.gore_sportske_aktuelnosti{
+    width: 870px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.levo_img_sportske_aktuelnosti img{
+    width: 530px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.desno_sportske_aktuelnosti{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.naslov_sportske_aktuelnosti{
+    color: #12203f;
+}
+.naslov_sportske_aktuelnosti p{
+    padding-top: 11px;
+}
+
+.procitaj_vise_sa_dugme{
+    margin-top: 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: transparent;
+    color: #12203f;
+    border: 1px solid #12203f;
+}
+
+.procitaj_vise_sa_dugme:hover{
+    background-color: #12203f;
+    color: white;
+}
+.procitaj_vise_sa_dugme p{
+    text-align: center;
+}
+
+.baner_sportske_aktuelnosti{
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    transition: box-shadow.3s;
+    background-color: #ffffff;
+    margin-left: 17px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+}
+.baner_sportske_aktuelnosti:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.sredina_sportske_aktuelnosti{
+    display: flex;
+    height: 90vh;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.sredina_sportske_aktuelnosti a{
+    text-decoration: none;
+    color: #12203f;
+}
+
+.slika_sp_akt img{
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main_sp_akt{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40vh;
+    
+}
+.main_sp_akt p{
+    padding-top: 10px;
+}
+
+.procitaj_vise_sp_ak {
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: transparent;
+    color: #12203f;
+    border: 1px solid #12203f;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
+.procitaj_vise_sp_ak:hover{
+    background-color: #12203f;
+    color: white;
+}
+
+.svi_postovi{
+    margin-left: 390px;
+    width: 12%;
+    border: solid #18243c thin;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #18243c;
+    font-size: 14px;
+    text-align: center;
+}
+.sportske_aktuelnosti a{
+    text-decoration: none;
+}
+.svi_postovi:hover{
+    background-color: #12203f;
+    color: white;
+}
+
+.desno_aktuelnosti{
+    width: 20%;
+    padding-top: 50px;
+}

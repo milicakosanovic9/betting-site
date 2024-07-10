@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form_map.css">
+    <title>Sportska kladionica MaxBet</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="container_forma">
+          <h1>MaxBet registracija</h1>
+          <p>Popunite polja kako biste kreirali nalog.</p>
+          <hr>
+
+          <label for="ime">Ime</label>
+          <input type="text" placeholder="Unesite ime" name="ime">
+        
+          <label for="email"><b>E-mail</b></label>
+          <input type="text" placeholder="Unesite e-mail" name="email" id="email" required>
+
+          <label for="repeat_email">Ponovite e-mail</label>
+          <input type="text" placeholder="Ponovite e-mail" name="email" id="email" required>
+      
+          <label for="psw"><b>Lozinka</b></label>
+          <input type="password" placeholder="Unesite lozinku" name="psw" id="psw" required>
+          <p id="small_txt"><small>Šifra treba da sadrži najmanje 8 karaktera(bar jedno veliko slovo ili specijalni karakter)</small></p>
+          <br>
+      
+          <label for="psw-repeat"><b>Ponovite lozinku</b></label>
+          <input type="password" placeholder="Ponovite lozinku" name="psw-repeat" id="psw-repeat" required>
+
+          <label for=""></label>
+          <hr>
+          <p>Kreiranjem ovog naloga prihvatam opšte uslove korišćenja <a href="#">Opšti uslovi korišćenja</a>.</p>
+      
+          <button type="submit" class="registerbtn">Potvrdi</button>
+        </div>
+        
+        <div class="container signin">
+          <p>Još uvek nemate kreiran nalog? <a href="#">Prijavite se</a>.</p>
+        </div>
+      </form>
+    <div class="maps">
+        <h1>Mapa do najbliže MaxBet kladionice</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90603.30955257501!2d20.20426513378068!3d44.79398553599142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a69d62f14361d%3A0xc53e24d9993a61e9!2sMaxBet%20Kladionica!5e0!3m2!1sen!2srs!4v1669031038499!5m2!1sen!2srs" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- iframe tag -  se odnosi na mogucnost da mozemo da ucitamo u delu nase stranice neku podstranicu-->
+    </div>
+</body>
+</html>
